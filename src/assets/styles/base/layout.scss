@@ -1,0 +1,19 @@
+// Basic grid/row context
+.row {
+  display: flex;
+  flex-flow: column wrap;
+}
+.row__element {
+  flex: 1;
+  padding: 2rem;
+}
+
+// Hero
+.hero {
+  display: flex;
+  background: red url('../../assets/images/nike.jpg') top center no-repeat;
+  background-size: cover;
+  padding: 2rem;
+  min-height: 50vh;
+  color: white;
+}

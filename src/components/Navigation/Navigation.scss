@@ -1,0 +1,54 @@
+@import '../../assets/styles/app.scss';
+
+// core styles
+.nav {
+  position: relative;
+}
+
+.nav__bar {
+  padding: 1.2rem;
+  font-size: 1.2rem;
+}
+
+.nav__links {
+  padding: 1.2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  height: 100vh;
+  transition: all 200ms ease-out;
+  z-index: 99;
+  background: $c-orange;
+  color: white;
+
+  &--hide {
+    opacity: 0;
+    visibility: hidden;
+  }
+  &--show {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+.nav__links li {
+  font-size: 2rem;
+  animation: fadeIn 0.20s ease-out;
+  line-height: 1.4;
+  letter-spacing: -0.07rem;
+  @for $i from 1 through 50 {
+    &:nth-child(#{$i}) {
+      animation-delay: 0.20s * $i;
+    }
+  }
+}
+
+// Extras
+
+.close {
+  position: absolute;
+  top: .7rem;
+  right: 1rem;
+  font-size: 3rem;
+}
