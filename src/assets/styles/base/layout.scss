@@ -1,11 +1,45 @@
 // Basic grid/row context
 .row {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
 }
 .row__element {
   flex: 1;
   padding: 2rem;
+
+  &--content-centered {
+    text-align: center;
+
+    .icon {
+      margin: auto;
+    }
+  }
+}
+
+.cards {
+  display: flex;
+  flex-flow: column wrap;
+}
+.card {
+  overflow: hidden;
+
+  img {
+    display: block;
+    width: 100%;
+    position: relative;
+  }
+
+  h5 {
+    color: $c-blue;
+  }
+
+  figure.caption {
+    padding: 2rem 5rem 2rem 2rem;
+    background: #fff;
+    display: block;
+    position: relative;
+    z-index: 99;
+  }
 }
 
 // Hero
@@ -13,7 +47,35 @@
   display: flex;
   background: red url('../../assets/images/nike.jpg') top center no-repeat;
   background-size: cover;
-  padding: 2rem;
   min-height: 50vh;
-  color: white;
+}
+
+section {
+  padding: 2rem;
+
+  &.registration {
+    background: #efefef;
+  }
+}
+
+// Icons
+
+.icon {
+  width: 66px;
+  height: 66px;
+  display: block;
+  margin-bottom: 1rem;
+
+  &--reg {
+    background: url('../../assets/images/icons.png') -1px 0 no-repeat;
+  }
+  &--engage {
+    background: url('../../assets/images/icons.png') -67px 0 no-repeat;
+  }
+  &--exp {
+    background: url('../../assets/images/icons.png') -133px 0 no-repeat;
+  }
+  &--ana {
+    background: url('../../assets/images/icons.png') -199px 0 no-repeat;
+  }
 }

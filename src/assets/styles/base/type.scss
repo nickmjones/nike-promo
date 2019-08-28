@@ -1,11 +1,40 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&display=swap');
 
-h1, h2, h3, h4, h5, h6 {
+@for $i from 1 through 5 {
+  h#{$i} {
+    font-size: $base-font-size + $heading-scale * (5 - $i);
+  }
+}
+
+h1, h2, h3, h4, h5 {
   line-height: 1.2;
   font-family: $header-font-family;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color: #666;
+}
+
+h1.jumbo {
+  font-size: 20vw;
+  color: #ffe138;
+  line-height: 1;
+  //font-style: italic;
+  align-self: flex-end;
+  margin: -.5rem;
+  padding-right: 15vw;
+  font-family: 'IBM Plex Mono', Monaco, monospace;
 }
 
 p {
   font-size: $base-font-size;
   margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.is-centered {
+  text-align: center;
+}
+
+strong {
+  color: #000;
 }
