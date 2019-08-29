@@ -1,3 +1,10 @@
+.wrapper {
+  @include for-tablet-portrait-up {
+    max-width: 70vw;
+    margin: auto;
+  }
+}
+
 // Basic grid/row context
 .row {
   display: flex;
@@ -47,6 +54,7 @@
   display: flex;
   background: red url('../../assets/images/nike.jpg') top center no-repeat;
   background-size: cover;
+  padding: 2rem;
   min-height: 50vh;
 }
 
@@ -55,6 +63,9 @@ section {
 
   &.registration {
     background: #efefef;
+  }
+  &.efx {
+    background: $c-lblue;
   }
 }
 
