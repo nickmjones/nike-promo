@@ -12,9 +12,6 @@ class Home extends Component {
   render() {
     return(
       <div>
-        <div className="hero">
-          <h1 className="jumbo">Event Farm &times; Nike</h1>
-        </div>
 
         <section className="intro">
           <h4>Combining the best experiential marketing platform and best sports apparel brand ever&mdash;that's Event Farm and Nike.</h4>

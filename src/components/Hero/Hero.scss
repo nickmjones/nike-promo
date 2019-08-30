@@ -1,0 +1,15 @@
+@import '../../assets/styles/app.scss';
+
+// Hero
+.hero {
+  display: flex;
+  background: red url('../../assets/images/nike.jpg') top center no-repeat;
+  background-size: cover;
+  padding: 2rem;
+  min-height: 50vh;
+
+  @include for-tablet-portrait-up {
+    padding: 10rem;
+    text-align: center;
+  }
+}

@@ -22,6 +22,12 @@ h1.jumbo {
   align-self: flex-end;
   padding-right: 15vw;
   font-family: 'IBM Plex Mono', Monaco, monospace;
+
+  @include for-tablet-portrait-up {
+    font-size: 10vw;
+    align-self: center;
+    padding: 0;
+  }
 }
 
 p {
